@@ -51,14 +51,16 @@
                      <div class="reason_icon_housing">
                         <img src="src/img/icons/icon-housing.svg" alt="housing">
                      </div>
-                     <h3>Жилье</h3>
-                     <p class="description">Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+                     <div class="reason_row_housing">
+                        <h3>Жилье</h3>
+                        <p class="description">Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+                     </div>
                   </li>
                   <li class="meal">
                      <div class="reason_icon_meal">
                         <img src="src/img/icons/icon-meal.svg" alt="meal">
                      </div>
-                     <div class="meal_info">
+                     <div class="reason_row_meal">
                         <h3>Еда</h3>
                         <p class="description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                      </div>
@@ -78,32 +80,28 @@
                <div class="reason_icon_devil's_bridge">
                   <img src="src/img/devil's_bridge.jpg" alt="devil's_bridge">
                </div>
-               <h2>Там есть мост дьявола</h2>
-               <span>-№2-</span>
-               <p class="description">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+               <div class="reason_row_devil's_bridge">
+                  <h2>Там есть мост дьявола</h2>
+                  <span>-№2-</span>
+                  <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+               </div>
             </li>
             <li class="reason-row">
                <ul>
-                  <li>
-                     <div class="reason_info">
-                        <h2>Небольшая площадь</h2>
-                        <span>-№3-</span>
-                        <p>Все достопримечательности находятся очень близко</p>
-                     </div>
+                  <li class="reason_row_info">
+                     <h2>Небольшая площадь</h2>
+                     <span>-№3-</span>
+                     <p>Все достопримечательности находятся очень близко</p>
                   </li>
-                  <li>
-                     <div class="reason_info">
-                        <h2>Красивая дорога</h2>
-                        <span>-№4-</span>
-                        <p> Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-                     </div>
+                  <li class="reason_info">
+                     <h2>Красивая дорога</h2>
+                     <span>-№4-</span>
+                     <p> Ехать в Седону из Лас-Вегаса совсем не скучно</p>
                   </li>
-                  <li>
-                     <div class="reason_info">
-                        <h2>Мало туристов</h2>
-                        <span>-№5-</span>
-                        <p>Большинство едет в Гранд-Каньон и толпится там</p>
-                     </div>
+                  <li class="reason_info">
+                     <h2>Мало туристов</h2>
+                     <span>-№5-</span>
+                     <p>Большинство едет в Гранд-Каньон и толпится там</p>
                   </li>
                </ul>
             </li>
@@ -117,18 +115,16 @@
                и мы покажем вам лучшие предложения гостинниц в Седоне</p>
          </div>
          <!--Всё, что относится к кнопке открытия формы-->
-         <div class="button">
-            <button type="button">Поиск гостинниц в Седоне</button>
-         </div>
+         <button type="button">Поиск гостинниц в Седоне</button>
          <!--Форма, выпающая при нажатии кнопки-->
          <div class="form_popup">
             <form class="user" method="post" action="https://echo.htmlacademy.ru">
-               <ul>
-                  <li>
-                     <label>
-                        Дата заезда
-                        <input type="text" name="arrival date" placeholder="24 апреля 2017">
-                     </label>
+               <div class="check-in">
+                  <label>
+                     Дата заезда
+                     <input type="text" name="arrival date" placeholder="24 апреля 2017">
+                  </label>
+                  <button class="calendar">
                      <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
                         viewBox="0 0 21 22">
                         <path
@@ -136,12 +132,14 @@
                         <path
                            d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
                      </svg>
-                  </li>
-                  <li>
-                     <label>
-                        Дата выезда
-                        <input type="text" name="departure date" placeholder="4 июля 2017">
-                     </label>
+                  </button>
+               </div>
+               <div class="exit">
+                  <label>
+                     Дата выезда
+                     <input type="text" name="departure date" placeholder="4 июля 2017">
+                  </label>
+                  <button class="calendar">
                      <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
                         viewBox="0 0 21 22">
                         <path
@@ -149,23 +147,21 @@
                         <path
                            d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
                      </svg>
-                  </li>
-               </ul>
-               <ul>
-                  <li>
-                     <label for="quantity_adults">Взрослые:</label>
-                     <button type="button" class="minus"> </button>
-                     <input class="adults" type="text" placeholder="2" id="quantity_adults">
-                     <button type="button" class="plus"></button>
-                  </li>
-                  <li>
-                     <label for="quantity_children">Дети:</label>
-                     <button type="button" class="minus"> </button>
-                     <input class="children" type="text" placeholder="2" id="quantity_children">
-                     <button type="button" class="plus"></button>
-                  </li>
-               </ul>
-               <button type="button">Найти</button>
+                  </button>
+               </div>
+               <div class="adults">
+                  <label for="quantity_adults">Взрослые:</label>
+                  <button type="button" class="minus"> </button>
+                  <input class="adults" type="text" placeholder="2" id="quantity_adults">
+                  <button type="button" class="plus"></button>
+               </div>
+               <div class="children">
+                  <label for="quantity_children">Дети:</label>
+                  <button type="button" class="minus"> </button>
+                  <input class="children" type="text" placeholder="2" id="quantity_children">
+                  <button type="button" class="plus"></button>
+               </div>
+               <button type="submit">Найти</button>
             </form>
          </div>
          <div class="map">
@@ -176,15 +172,13 @@
    <footer>
       <div class="contacts">
          <p>#Visitsedona</p>
-         <p>Тел:+7(495) 666-02-46</p>
+         <a href="tel:+74956660246">Тел:+7(495) 666-02-46</a>
       </div>
-      <div class="social_network">
-         <ul>
+         <ul class="social_network">
             <li><a href="https://twitter.com"> <img src="src/img/icons/twitter.svg" alt="twitter"></a></li>
             <li><a href="https://www.youtube.com"><img src="src/img/icons/youtube.svg" alt="youtube"></a></li>
             <li><a href="https://www.facebook.com"><img src="src/img/icons/fb-icon.svg" alt="instagram"></a></li>
          </ul>
-      </div>
       <div class="html_academy">
          <p>website by</p>
          <a href="https://htmlacademy.ru/intensive/htmlcss">
