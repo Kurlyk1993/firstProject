@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Отели Седоны</title>
+    <link rel="#" href="#">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="photo_and_video.html">Фото и видео</a></li>
+            </ul>
+            <a href="/" class="nav_logo">
+                <img src="src/img/icons/logo.svg" alt="logo" width="100" height="150">
+            </a>
+            <ul class="nav_list">
+                <li><a href="map_of_the_states.html">Карта штата</a></li>
+                <li><a href="hotel.html">Гостинницы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="selection_of_hotel_services">
+            <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                <img src="src/img/filter_background.jpg" alt="background">
+                <p class="infrastructure"> Инфраструктура </p>
+                <ul class="choosing infrastructure">
+                    <li> <label> <input type="checkbox" checked> Бассейн </label></li>
+                    <li> <label> <input type="checkbox"> Парковка </label></li>
+                    <li> <label> <input type="checkbox"> WI-FI </label></li>
+                </ul>
+                <p class="type of housing">Тип жилья</p>
+                <ul class="choosing_the_type_of_housing">
+                    <li> <label> <input type="checkbox" checked> гостинница </label></li>
+                    <li> <label> <input type="checkbox" checked> мотель </label></li>
+                    <li> <label> <input type="checkbox" checked> аппартаменты </label></li>
+                </ul>
+                <!--<input type="range">  с двумя ползунками. Пока хз, как сделать-->
+                <div class="button">
+                    <button class="button_show">Показать</button>
+                </div>
+            </form>
+        </section>
+        <section class="search_results">
+            <p class="search">Найдено:3</p>
+            <p class="sorting">Сортировка:</p>
+            <ul class="sorting_by_parameters">
+                <li>по цене</li>
+                <li>по типу</li>
+                <li>по рейтингу</li>
+            </ul>
+            <ul class="arrow">
+                <li><button><img src="#" alt="стрелка вверх"></button></li>
+                <li><button><img src="#" alt="стркелка вниз"></button></li>
+            </ul>
+            <ul class="catalog hotels">
+                <li class="amara">
+                    <div class="">
+                        <img src="src/img/amara.jpg" alt="amara_resort_&_spa">
+                    </div>
+                    <h2>amara resort & spa</h2>
+                    <div class="info_for_hotel">
+                        <span>гостинница</span>
+                        <span>от 4000 р.</span>
+                        <a href="#">подробнее</a>
+                        <button>забронировать</button>
+                    </div>
+                    <div class="rating_hotels">
+                        <div class="stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <span>рейтинг:8.5</span>
+                    </div>
+                </li>
+                <li class="desert">
+                    <div>
+                        <img src="src/img/desert.jpg" alt="desert_quail_inn">
+                    </div>
+                    <h2>desert quail inn</h2>
+                    <div class="info_for_hotel">
+                        <span>гостинница</span>
+                        <span>от 3000 р.</span>
+                        <a href="#">подробнее</a>
+                        <a href="#">забронировать</a>
+                    </div>
+                    <div class="rating_hotels">
+                        <div class="stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <span>рейтинг:8.9</span>
+                    </div>
+                </li>
+                <li class="villas">
+                    <div class="">
+                        <img src="src/img/desert.jpg" alt="villas_at_poco_diablo">
+                    </div>
+                    <h2>villas at poco diablo</h2>
+                    <div class="info_for_hotel">
+                        <img src="src/img/desert.jpg" alt="villas_at_poco_diablo">
+                        <span>гостинница</span>
+                        <span>от 2000 р.</span>
+                        <a href="#">подробнее</a>
+                        <a href="#">забронировать</a>
+                    </div>
+                    <div class="rating_hotels">
+                        <div class="stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <span>рейтинг:9.2</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <p>#Visitsedona</p>
+            <p>Тел:+7(495) 666-02-46</p>
+        </div>
+        <div class="social_network">
+            <ul>
+                <li><a href="https://twitter.com"> <img src="src/img/icons/twitter.svg" alt="twitter"></a></li>
+                <li><a href="https://www.youtube.com"><img src="src/img/icons/youtube.svg" alt="youtube"></a></li>
+                <li><a href="https://www.facebook.com"><img src="src/img/icons/fb-icon.svg" alt="instagram"></a></li>
+            </ul>
+        </div>
+        <div class="html_academy">
+            <p>website by</p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="src/img/logo_name.png" alt="website_by_html_academy">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
